@@ -3,18 +3,49 @@
   "version": "1.0.0",
   "description": "Boilerplate - API GraphQL, Typescript and Mongoose",
   "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "npm run serve",
+    "serve": "node dist/server.js",
+    "watch-node": "nodemon dist/server.js",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "Typescript",
+    "Graphql",
+    "node",
+    "javascript",
+    "mongoose",
+    "apollo"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codeoliveira/api-graphql-ts-mongoose.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "codeoliveira | encode.cafe",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/codeoliveira/api-graphql-ts-mongoose/issues"
   },
-  "homepage": "https://github.com/codeoliveira/api-graphql-ts-mongoose#readme"
+  "homepage": "https://github.com/codeoliveira/api-graphql-ts-mongoose#readme",
+  "dependencies": {
+    "@typegoose/typegoose": "^9.7.1",
+    "apollo-server-core": "^3.6.7",
+    "apollo-server-express": "^3.6.7",
+    "class-validator": "^0.13.2",
+    "express": "^4.17.3",
+    "graphql": "^15.8.0",
+    "mongoose": "^6.2.9",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "github:types/express",
+    "@types/node": "^17.0.23",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
 }
